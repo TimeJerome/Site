@@ -485,7 +485,7 @@ body {
   }
 
   .menu__menu.active {
-    top: 14.4%;
+    top: 15%;
     height: -webkit-fill-available;
     transition: all 0.7s ease 0s;
   }

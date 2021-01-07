@@ -73,6 +73,10 @@ body {
   font-family: arial;
 }
 
+.conteiner a {
+  text-decoration: none;
+}
+
 .original {
   min-height: 100%;
   overflow: hidden;
@@ -103,7 +107,7 @@ body {
 }
 
 .hi__logo {
-  max-width: 40%;
+  min-width: 45%;
   display: flex;
   box-shadow: 0 0px 10px black;
   border-radius: 0px 0px 50px 0px;
@@ -113,7 +117,6 @@ body {
   height: 100%;
   display: grid;
   display: flex;
-  max-width: 35%;
 }
 
 .hi__text {
@@ -164,8 +167,9 @@ body {
 
 .footer .footer__row {
   padding: 0.5%;
-  background: antiquewhite;
+  background: mediumpurple;
   text-align: center;
+  font-family: monospace;
 }
 
 .geo__row {
@@ -182,7 +186,6 @@ body {
 
 .geo__title {
   text-align: center;
-  font-size: 1.5vw;
   padding: 5% 0;
 }
 
@@ -231,12 +234,13 @@ body {
 }
 
 .geo__column {
-  width: 25%;
+  width: 50%;
   text-align: center;
   background: azure;
   padding-bottom: 2vh;
   border-radius: 20px;
   padding-right: 2%;
+  box-shadow: 0 0 10px cadetblue;
 }
 
 .geo__column._Kont li {
@@ -246,6 +250,11 @@ body {
 
 .geo__punkt {
   text-align: center;
+}
+
+.geo__tocolumn {
+  display: flex;
+  width: 50%;
 }
 
 .menu__list {
@@ -567,6 +576,7 @@ body {
   }
 
   .hi__text {
+    width: 100%;
     padding-left: 5%;
     margin: 0 3%;
   }
@@ -587,5 +597,18 @@ body {
     z-index: 1;
     height: 100%;
     top: 100%;
+  }
+
+  .geo__tocolumn {
+    display: flex;
+    width: 100%;
+  }
+
+  .geo__center {
+    display: block;
+  }
+
+  .geo__column {
+    width: 50%;
   }
 }

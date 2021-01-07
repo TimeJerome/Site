@@ -283,6 +283,11 @@ body {
   box-shadow: 0 0 10px white;
 }
 
+.body__map {
+  height: 100%;
+  width: 100%;
+}
+
 .menu__element._el {
   transition: all 0.5s ease 0s;
 }
@@ -351,6 +356,33 @@ body {
   display: inline-flex;
 }
 
+.slick-track {
+  display: flex;
+}
+
+.slider__body {
+  position: relative;
+}
+
+.slider__body .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.slider__body .slick-arrow.slick-prev {
+  background: url(../../Img/ArR.png);
+  right: 0%;
+}
+
+.slider__body .slick-arrow.slick-next {
+  left: 0%;
+  background: url(../../Img/ArL.png);
+}
+
 @media (max-width: 767px) {
   .body__conteiner {
     height: auto;
@@ -368,6 +400,7 @@ body {
 @media (max-width: 767px) {
   .body__image {
     width: 100%;
+    height: 35vh;
   }
 }
 .body__image img {
@@ -434,6 +467,10 @@ body {
     z-index: 10;
     margin: auto;
     top: 30%;
+  }
+
+  .body__title {
+    margin-top: 2%;
   }
 
   .hi__burger:before, .hi__burger:after {
@@ -616,5 +653,13 @@ body {
 
   .geo__row {
     padding: 0%;
+  }
+
+  ._uni {
+    margin-top: 2vh;
+  }
+
+  .body__map {
+    height: 30vh;
   }
 }

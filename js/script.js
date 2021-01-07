@@ -9,3 +9,9 @@ $(document).ready(function(event) {
         $('.menu__list').toggleClass('active');
     });
 });
+$(document).ready(function(event) {
+    $('.slider__body').slick({
+        autoplay:true,
+    });
+
+});

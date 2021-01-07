@@ -374,13 +374,13 @@ body {
 }
 
 .slider__body .slick-arrow.slick-prev {
-  background: url(../../Img/ArR.png);
+  background: url(../Img/ArR.png);
   right: 0%;
 }
 
 .slider__body .slick-arrow.slick-next {
   left: 0%;
-  background: url(../../Img/ArL.png);
+  background: url(../Img/ArL.png);
 }
 
 @media (max-width: 767px) {

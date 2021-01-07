@@ -11,7 +11,7 @@ $(document).ready(function(event) {
 });
 $(document).ready(function(event) {
     $('.slider__body').slick({
-        autoplay:true,
+        autoplay:false,
     });
 
 });

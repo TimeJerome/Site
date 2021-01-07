@@ -291,6 +291,7 @@ body {
   z-index: 1;
   height: 100%;
   top: 100%;
+  display: block;
 }
 
 .menu__column:hover {
@@ -521,7 +522,7 @@ body {
   }
 
   .menu__menu {
-    background: #f08c78;
+    background: azure;
     width: 100%;
     height: 13vh;
     justify-content: space-between;
@@ -610,5 +611,10 @@ body {
 
   .geo__column {
     width: 50%;
+    border-radius: 0%;
+  }
+
+  .geo__row {
+    padding: 0%;
   }
 }

@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -71,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: arial;
+  background: #D1D5FA;
 }
 
 .conteiner a {
@@ -95,7 +100,7 @@ body {
 }
 
 .hi__top {
-  height: 8vh;
+  height: 10vh;
   display: flex;
   background-color: aliceblue;
   justify-content: space-between;
@@ -116,15 +121,13 @@ body {
 .hi__foto {
   height: 100%;
   display: grid;
-  display: flex;
 }
 
 .hi__text {
-  background-color: white;
-  font-size: 100%;
-  overflow: hidden;
+  font-size: 200%;
   padding-left: 2%;
-  border-radius: 0px 0px 50px 0px;
+  font-family: Sansita Swashed;
+  margin: auto;
 }
 
 .hi__langeage {
@@ -147,16 +150,17 @@ body {
 .hi__lenguage {
   margin: auto 0;
   position: relative;
+  padding-left: 5%;
 }
 
 .hi__soc {
-  max-width: 20%;
+  max-width: 15%;
   display: inline-flex;
   justify-content: space-around;
 }
 
 .soc {
-  height: 50%;
+  height: 30%;
   border-radius: 50%;
   margin: auto 0;
 }
@@ -172,6 +176,10 @@ body {
   font-family: monospace;
 }
 
+.footer__text {
+  font-family: "Berkshire Swash";
+}
+
 .geo__row {
   background-color: cornsilk;
   padding: 2vh 2vw;
@@ -182,11 +190,13 @@ body {
   box-shadow: 0px 0.5px white;
   display: flex;
   justify-content: space-around;
+  font-family: "Sansita Swashed";
 }
 
 .geo__title {
-  text-align: center;
   padding: 5% 0;
+  position: relative;
+  cursor: pointer;
 }
 
 .menu__rov {
@@ -206,13 +216,14 @@ body {
 .menu__column {
   width: inherit;
   height: 100%;
-  font-size: 1.2vw;
+  font-size: 100%;
   text-align: center;
   background: lavender;
   box-shadow: 0 0 10px black;
   color: white;
   transition-duration: 1s;
   cursor: pointer;
+  font-family: "Sansita Swashed";
 }
 
 .geo__column li {
@@ -220,6 +231,7 @@ body {
   height: 3vh;
   transition: all 0.5s ease 0s;
   box-shadow: 0 2px 0px black;
+  margin-top: 5px;
 }
 
 .geo__column li:hover {
@@ -274,6 +286,14 @@ body {
   transition: all 0.5s ease 0s;
 }
 
+.body__title._shad {
+  text-shadow: 0px 0 5px black;
+}
+
+.body__title._fed {
+  font-size: 80%;
+}
+
 .menu__facult {
   box-shadow: 0px 2px black;
 }
@@ -310,6 +330,7 @@ body {
   padding: 1vh 0;
   position: relative;
   color: black;
+  font-family: "Sansita Swashed";
 }
 
 .preBody__row {
@@ -330,8 +351,9 @@ body {
   color: white;
   font-size: 3vw;
   text-align: center;
-  text-shadow: 2px 0 black;
+  text-shadow: 0px 0 20px black;
   transition: all 0.5s ease 0s;
+  font-family: Imbue;
 }
 
 .preBody__text:hover {
@@ -345,14 +367,26 @@ body {
   font-size: 3vw;
   text-align: center;
   font-weight: 700;
-  text-shadow: 2px 0 black;
+  text-shadow: 0px 0 5px white;
   color: white;
+  font-family: Berkshire Swash;
+  transition: all 0.5s ease 0s;
   box-shadow: 0px -1px black;
+}
+
+.body__title a {
+  transition: all 0.5s ease 0s;
+}
+
+.body__title:hover a {
+  color: red;
 }
 
 .body__conteiner {
   height: 50vh;
   display: inline-flex;
+  font-family: "Caveat";
+  font-size: 140%;
 }
 
 .slick-track {
@@ -399,7 +433,6 @@ body {
 @media (max-width: 767px) {
   .body__image {
     width: 100%;
-    height: 35vh;
   }
 }
 .body__image img {
@@ -414,6 +447,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .soc {
+    height: 50%;
+  }
+
   .body__box {
     width: 100%;
   }
@@ -422,7 +459,7 @@ body {
   background: dimgrey;
   padding: 2%;
   text-align: center;
-  font-size: 150%;
+  font-size: 125%;
   color: white;
   text-shadow: 2px 0 black;
 }
@@ -470,6 +507,7 @@ body {
 
   .body__title {
     margin-top: 2%;
+    font-size: 150%;
   }
 
   .hi__burger:before, .hi__burger:after {
@@ -586,7 +624,6 @@ body {
   .menu__column {
     width: 100%;
     height: 9vh;
-    font-size: 3vw;
     text-align: center;
     box-shadow: 0 0 10px black;
     color: white;
@@ -619,7 +656,7 @@ body {
   .hi__text {
     width: 100%;
     padding-left: 5%;
-    margin: 0 3%;
+    margin: auto;
   }
 
   .menu__list {
@@ -650,7 +687,7 @@ body {
   }
 
   .geo__column {
-    width: 50%;
+    width: 100%;
     border-radius: 0%;
   }
 
@@ -664,5 +701,207 @@ body {
 
   .body__map {
     height: 30vh;
+  }
+
+  .hi__foto {
+    display: grid;
+    width: 100%;
+  }
+
+  .geo__title1 {
+    padding: 1% 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .geo__title1:before,
+.geo__title1:after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 15px;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__title1:before {
+    transform: rotate(40deg);
+    left: 0;
+  }
+
+  .geo__title1:after {
+    transform: rotate(-40deg);
+    left: 7px;
+  }
+
+  .geo__title1.active:before {
+    background: red;
+    transform: rotate(-40deg);
+    top: 9px;
+  }
+
+  .geo__title1.active:after {
+    background: red;
+    transform: rotate(40deg);
+    top: 9px;
+  }
+
+  .geo__spoil1 {
+    display: none;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__spoil1.active {
+    display: block;
+  }
+
+  .geo__title2 {
+    padding: 1% 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .geo__title2:before,
+.geo__title2:after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 15px;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__title2:before {
+    transform: rotate(40deg);
+    left: 0;
+  }
+
+  .geo__title2:after {
+    transform: rotate(-40deg);
+    left: 7px;
+  }
+
+  .geo__title2.active:before {
+    background: red;
+    transform: rotate(-40deg);
+    top: 9px;
+  }
+
+  .geo__title2.active:after {
+    background: red;
+    transform: rotate(40deg);
+    top: 9px;
+  }
+
+  .geo__spoil2 {
+    display: none;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__spoil2.active {
+    display: block;
+  }
+
+  .geo__title3 {
+    padding: 1% 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .geo__title3:before,
+.geo__title3:after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 15px;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__title3:before {
+    transform: rotate(40deg);
+    left: 0;
+  }
+
+  .geo__title3:after {
+    transform: rotate(-40deg);
+    left: 7px;
+  }
+
+  .geo__title3.active:before {
+    background: red;
+    transform: rotate(-40deg);
+    top: 9px;
+  }
+
+  .geo__title3.active:after {
+    background: red;
+    transform: rotate(40deg);
+    top: 9px;
+  }
+
+  .geo__spoil3 {
+    display: none;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__spoil3.active {
+    display: block;
+  }
+
+  .geo__title4 {
+    padding: 1% 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .geo__title4:before,
+.geo__title4:after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 15px;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__title4:before {
+    transform: rotate(40deg);
+    left: 0;
+  }
+
+  .geo__title4:after {
+    transform: rotate(-40deg);
+    left: 7px;
+  }
+
+  .geo__title4.active:before {
+    background: red;
+    transform: rotate(-40deg);
+    top: 9px;
+  }
+
+  .geo__title4.active:after {
+    background: red;
+    transform: rotate(40deg);
+    top: 9px;
+  }
+
+  .geo__spoil4 {
+    display: none;
+    transition: all 0.7s ease 0s;
+  }
+
+  .geo__spoil4.active {
+    display: block;
+  }
+}
+@media (max-width: 475px) {
+  .hi__text {
+    font-size: 150%;
   }
 }

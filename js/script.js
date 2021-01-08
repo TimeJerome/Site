@@ -15,3 +15,23 @@ $(document).ready(function(event) {
     });
 
 });
+$(document).ready(function(event) {
+    $('.geo__title1').click(function(event) {
+        $('.geo__title1,.geo__spoil1').toggleClass('active').next().slideToggle(300);
+    });
+});
+$(document).ready(function(event) {
+    $('.geo__title2').click(function(event) {
+        $('.geo__title2,.geo__spoil2').toggleClass('active').next().slideToggle(300);
+    });
+});
+$(document).ready(function(event) {
+    $('.geo__title3').click(function(event) {
+        $('.geo__title3,.geo__spoil3').toggleClass('active').next().slideToggle(300);
+    });
+});
+$(document).ready(function(event) {
+    $('.geo__title4').click(function(event) {
+        $('.geo__title4,.geo__spoil4').toggleClass('active').next().slideToggle(300);
+    });
+});

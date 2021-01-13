@@ -905,6 +905,10 @@ body {
   body.lock {
     overflow: hidden;
   }
+  .window__coment{
+    position: relative;
+    width: 100%;
+  }
 
   .textFront {
     display: inline-flex;

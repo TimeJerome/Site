@@ -535,7 +535,7 @@ body {
 }
 
 .preBody__row {
-  background-image: url(../../Img/preBody.jpg);
+  background-image: url(../Img/preBody.jpg);
   background-size: cover;
   height: 70vh;
   padding: 20%;

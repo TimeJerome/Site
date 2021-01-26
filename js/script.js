@@ -35,7 +35,7 @@ function offset(el) {
 
 $(document).ready(function(event) {
     $('.hi__burger').click(function(event) {
-        $('.hi__burger,.window__item_min,.hi__burger__wra,.hi__soc').toggleClass('active');
+        $('.hi__burger,.slider__title_min,.hi__burger__wra,.hi__soc').toggleClass('active');
         $('body').toggleClass('lock');
     });
 });
@@ -59,6 +59,7 @@ new Swiper('.slider__title',{
     loopedSlides: 1,
    autoHeight: true,
     simulateTouch: false,
+    touchRatio:0,
     fadeEffect:{
         crossFade: true
     },

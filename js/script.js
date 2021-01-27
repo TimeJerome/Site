@@ -102,7 +102,7 @@ new Swiper('.window__class',{
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false
     },
     speed: 1500,

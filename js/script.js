@@ -173,8 +173,8 @@ function range1 () {
 
 	num1 = document.getElementById('n1').value;
 	num1 = parseInt(num1);
-	result = (num1 * num2);
-	document.getElementById('out1').innerHTML=result}
+	result = (num1 * num2 );
+	document.getElementById('out1').innerHTML= result }
 	setInterval(Kalk,10,1>0);
 
 	let num3;
@@ -182,38 +182,32 @@ function Gla(){
 	var text1;
 	text1 = "Глянцевые натяжные потолки - это гладкое полотно с зеркальной поверхностью и сильными светоотражающими свойствами. Именно этот вид потолков обладает самым большим выбором оттенков.";
 	document.getElementById('Description').innerHTML=text1;
-	result = 100;
+	result = 7 +'$';
 	document.getElementById('out2').value=result;}
 	
 function Mat(){
 	var text2;
 	text2 = "Матовые потолки - классический вариант с идеально ровной поверхностью без бликов и эффекта отражения от любого типа освещения. Такие потолки добавляют строгости интерьера.";
 	document.getElementById('Description').innerHTML=text2;
-	result = 150;
+	result = 7 +'$' ;
 	document.getElementById('out2').value=result;}
 function Sat(){
 	var text;
 	text = "Сатиновые потолки имеют уникальную фактуру, напоминающую натуральную ткань, мягко рассеивает свет с перламутровыми бликами, наполняя пространство элегантностью и изысканностью.";
 	document.getElementById('Description').innerHTML=text;
-	result = 300;
+	result = 7 +'$';
 	document.getElementById('out2').value=result;}
 function Lvl(){
 	var text;
 	text = "Благодаря возможности комбинировать различные цвета и фактуры можно воплощать любые дизайнерские решения. Такие варианты потолков идеальные для зонирования помещения.";
 	document.getElementById('Description').innerHTML=text;
-	result = 450;
+	result = 10 +'$';
 	document.getElementById('out2').value=result;}
 function Foto(){
 	var text;
 	text = "Современные технологии печати позволяют нанести на полотно натяжного потолка любое изображение или фотографию, что позволяет создать неповторимый и эксклюзивный проект.";
 	document.getElementById('Description').innerHTML=text;
-	result = 600;
-	document.getElementById('out2').value=result;}
-function Art(){
-	var text;
-	text = "АРТ потолки с различными эффектами украсят и превратят все пространство и сделают интерьер неповторимым. С помощью правильно подобранного освещения можно еще выгоднее подчеркнуть фактурность таких необычных полотен.";
-	document.getElementById('Description').innerHTML=text;
-	result = 800;
+	result = 18 +'$';
 	document.getElementById('out2').value=result;}
 
 
@@ -231,6 +225,6 @@ function Kalkulate(){
 
 	result1 = num4*num3;
 	
-document.getElementById('out').value=result1;
+document.getElementById('out').value=result1 +'$';
 }
 setInterval(Kalkulate,10,1>0);

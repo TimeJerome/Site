@@ -406,6 +406,7 @@ body {
   margin-top: 15%;
   transition: all 1s ease 0s;
   text-shadow: 1px 0px 5px white;
+  color: black;
 }
 
 .how__column {
@@ -724,9 +725,36 @@ body {
 }
 
 .window__text {
+  margin-top: 3%;
   width: 100%;
   display: flex;
   background: rgba(255, 255, 255, 0.5);
+}
+
+.text__title {
+  font-size: 130%;
+  margin-bottom: 5%;
+  font-weight: 600;
+}
+
+.far.fa-check-circle {
+  margin-right: 2%;
+  font-size: 130%;
+  transition: all 1s ease 0s;
+}
+
+.text__li {
+  text-align: left;
+  font-weight: 600;
+  transition: all 1s ease 0s;
+  cursor: pointer;
+}
+
+.text__li:hover {
+  color: red;
+}
+.text__li:hover .far.fa-check-circle {
+  color: blue;
 }
 
 .text__img {
@@ -735,7 +763,7 @@ body {
   justify-content: center;
   display: flex;
 }
-.text__img img {
+.text__img video {
   width: 70%;
   box-shadow: 0 0 10px black;
 }
@@ -753,13 +781,82 @@ body {
   text-shadow: 0px 0px 20px white;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  top: 25%;
+}
+
+.pre__card._botom {
+  height: 45%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 0%;
+  border-radius: 0% 0;
+  transition: all 1s ease 0s;
+  text-align: center;
+  padding: 5%;
+}
+
+.pre__text._botom {
+  font-weight: 600;
+  font-size: 200%;
+  line-height: 140%;
+}
+
+.hi__telfoot._cal {
+  width: 10%;
+  display: block;
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+.soc._cal {
+  margin: 10% 0;
+  font-size: 150%;
+}
+
+.title__soc {
+  font-weight: 600;
+  font-size: 120%;
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .conteiner {
     max-width: 700px;
   }
 
+  .title__soc {
+    opacity: 0;
+  }
+
+  .pre__card._botom {
+    padding: 0%;
+  }
+
   .type {
     display: block;
+  }
+
+  .window__text {
+    display: block;
+  }
+
+  .text__text {
+    margin-top: 2%;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .text__img {
+    width: 100%;
+  }
+
+  .slider2, .slider1 {
+    display: none;
   }
 
   .slideconteiner1 {
@@ -950,6 +1047,7 @@ body {
     font-size: 120%;
     transform: translate(-25%, 0);
     opacity: 1;
+    color: white;
   }
   .how__column.swiper-slide-thumb-active .how__text._fak {
     transform: translate(-50%, 0);

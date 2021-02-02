@@ -1190,6 +1190,8 @@ body {
   .hi__foto {
     display: grid;
     width: 100%;
+    height: 100%;
+    
   }
 
   .geo__title1 {
